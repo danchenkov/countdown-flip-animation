@@ -141,7 +141,17 @@ span.stop {
   z-index: 1;
 }
 
-.bottom::before,
+.bottom::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 106.5px;
+  background-color: hsl(235, 20%, 25%);
+}
+
 .top-back::before {
   content: "";
   position: absolute;
@@ -149,7 +159,7 @@ span.stop {
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 106.5px;
   background-color: hsl(235, 20%, 25%);
 }
 
